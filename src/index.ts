@@ -1,16 +1,9 @@
-let c: {
-  firstName: string
-  lastName: string
-} = {
-  firstName: 'john',
-  lastName: 'barrowman'
+let a: {
+  b: number
+  c?: string
+  [key: number]: boolean
 }
 
-class Person {
-  constructor(
-    public firstName: string,
-    public lastName: string
-  ) {}
-}
-c = new Person('matt', 'smith')
-console.log(c)
+a = {b: 1, 10: true}
+
+console.log(a)
