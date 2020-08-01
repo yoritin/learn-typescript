@@ -1,8 +1,4 @@
-
-
-function squareOf(n: number) {
-  return n * n
+let a: {b: number} = {
+  b: 12
 }
-
-const a = squareOf(8)
-console.log(a)
+a.b
