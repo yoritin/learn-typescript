@@ -8,4 +8,17 @@ let a: CatOrDogOrBoth = {
   purrs: true
 }
 
+a = {
+  name: 'Domino',
+  barks: true,
+  wags:true
+}
+
+a = {
+  name: 'Domino',
+  barks: true,
+  purrs: true,
+  wags: true
+}
+
 console.log(a)
