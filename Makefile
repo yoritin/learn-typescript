@@ -1,6 +1,8 @@
 build:
 	./node_modules/.bin/tsc
 
+watch:
+	./node_modules/.bin/tsc --watch
+
 run:
-	./node_modules/.bin/tsc
 	node ./dist/index.js
