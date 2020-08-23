@@ -1,5 +1,9 @@
 class Person {
-
+  static species = 'Homo sapiens';
+  static isAdult(age: number) {
+    if (age > 17) return true;
+    return false;
+  }
   constructor(public readonly name: string, protected age: number) {
   }
   incrementAge() {
@@ -30,7 +34,4 @@ class Teacher extends Person {
     console.log(`Hello! My name is ${this.name}. I am ${this.age} years old. I teach ${this.subject}`);
   }
 }
-const teacher = new Teacher('mail', 23, '');
-teacher.subject = 'Music'
-console.log(teacher.subject)
-teacher.greeting();
+console.log(Person.species)
