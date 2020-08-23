@@ -72,7 +72,7 @@ const doubleNumber: (num: number) => number = num => num * 2;
 
 function doubleAndHandle(num: number, cb: (num: number) => void): void {
   const doubleNum = cb(num * 2);
-  // console.log(doubleNum);
+  console.log(doubleNum);
 }
 doubleAndHandle(21, doubleNum => {
   return doubleNum
@@ -92,4 +92,4 @@ if (typeof unknownInput === 'string') {
 function error(message: string) {
   throw new Error(message);
 }
-console.log(error('This is an errorr'));
+console.log(error('This is an error'));
