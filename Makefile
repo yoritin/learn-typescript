@@ -5,4 +5,4 @@ watch:
 	./node_modules/.bin/tsc --watch
 
 run:
-	node ./dist/index.js
+	node ./dist/class.js
