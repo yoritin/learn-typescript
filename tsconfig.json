@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // "lib": ["es2015"],
-    "module": "commonjs",
+    // "module": "commonjs",
     "outDir": "dist",
     "rootDir": "./src/food-app",
     "sourceMap": false,
@@ -9,6 +9,6 @@
     "target": "es2015"
   },
   "include": [
-    "src/food-app"
+    "./src/food-app"
   ]
 }
