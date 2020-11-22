@@ -21,7 +21,15 @@ class Foods {
     return this._activeElements;
   }
   get activeElementsScore() {
-    
+    this._activeElementsScore = [];
+    this.activeElements.forEach(element => {
+      const foodScore = element.querySelector('.food__score');
+      if (foodScore) {
+        this._activeElementsScore.push(Number(foodScore.textContent));
+      }
+    })
+    return this._activeElementsScore;
+    // return 'test';
   }
   constructor() {
     this.elements.forEach(element => {
